@@ -32,6 +32,7 @@
 		37E7CBAB2528E7A000117BEF /* AboutUsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CBAA2528E7A000117BEF /* AboutUsPresenter.swift */; };
 		37E7CBAE2528E7A800117BEF /* AboutUsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CBAD2528E7A800117BEF /* AboutUsRouter.swift */; };
 		37E7CBB12528E7E800117BEF /* AboutUsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CBB02528E7E800117BEF /* AboutUsBuilder.swift */; };
+		37E7CBBE2528EE1100117BEF /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CBBD2528EE1100117BEF /* UIColor+Ext.swift */; };
 		3B7FB3CA2528A19C008294A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3C92528A19C008294A7 /* AppDelegate.swift */; };
 		3B7FB3CC2528A19C008294A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3CB2528A19C008294A7 /* SceneDelegate.swift */; };
 		3B7FB3CE2528A19C008294A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3CD2528A19C008294A7 /* MainViewController.swift */; };
@@ -68,6 +69,7 @@
 		37E7CBAA2528E7A000117BEF /* AboutUsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsPresenter.swift; sourceTree = "<group>"; };
 		37E7CBAD2528E7A800117BEF /* AboutUsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsRouter.swift; sourceTree = "<group>"; };
 		37E7CBB02528E7E800117BEF /* AboutUsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsBuilder.swift; sourceTree = "<group>"; };
+		37E7CBBD2528EE1100117BEF /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		3B7FB3C62528A19C008294A7 /* SleepHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7FB3C92528A19C008294A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7FB3CB2528A19C008294A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -434,6 +436,7 @@
 			children = (
 				3B7FB3C92528A19C008294A7 /* AppDelegate.swift */,
 				3B7FB3CB2528A19C008294A7 /* SceneDelegate.swift */,
+				37E7CBBD2528EE1100117BEF /* UIColor+Ext.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				3B7FB3CE2528A19C008294A7 /* MainViewController.swift in Sources */,
 				37B82B412528B59000B912D3 /* OffsetViewController.swift in Sources */,
 				3B7FB3CA2528A19C008294A7 /* AppDelegate.swift in Sources */,
+				37E7CBBE2528EE1100117BEF /* UIColor+Ext.swift in Sources */,
 				3B7FB3CC2528A19C008294A7 /* SceneDelegate.swift in Sources */,
 				37E7CB7B2528E5B600117BEF /* RecommendationsViewController.swift in Sources */,
 				37B82B4D2528B69100B912D3 /* OffsetBuilder.swift in Sources */,
