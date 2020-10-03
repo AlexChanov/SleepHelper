@@ -11,9 +11,9 @@ final class OffsetBuilder {
 
 		public func createOffsetModule() -> UIViewController {
 				let view = OffsetViewController()
-//				let router = MainRouter(controller: view)
-//				let presenter = MainPresenter(view: view, router: router)
-//				view.presenter = presenter
+				let router = OffsetRouter(controller: view)
+				let presenter = OffsetPresenter(view: view, router: router)
+				view.presenter = presenter
 
 				return view
 		}

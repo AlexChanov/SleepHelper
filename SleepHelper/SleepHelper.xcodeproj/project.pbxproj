@@ -96,10 +96,10 @@
 		37B82B442528B5A200B912D3 /* Offset */ = {
 			isa = PBXGroup;
 			children = (
-				37B82B4B2528B65900B912D3 /* Builder */,
+				37B82B462528B5E300B912D3 /* Controller */,
 				37E7CB762528E53D00117BEF /* Presenter */,
 				37E7CB782528E54400117BEF /* Router */,
-				37B82B462528B5E300B912D3 /* Controller */,
+				37B82B4B2528B65900B912D3 /* Builder */,
 			);
 			path = Offset;
 			sourceTree = "<group>";
