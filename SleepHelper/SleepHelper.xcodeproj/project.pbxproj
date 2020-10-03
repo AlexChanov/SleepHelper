@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37B82B412528B59000B912D3 /* OffsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B402528B59000B912D3 /* OffsetViewController.swift */; };
+		37B82B4D2528B69100B912D3 /* OffsetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */; };
 		3B7FB3CA2528A19C008294A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3C92528A19C008294A7 /* AppDelegate.swift */; };
 		3B7FB3CC2528A19C008294A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3CB2528A19C008294A7 /* SceneDelegate.swift */; };
 		3B7FB3CE2528A19C008294A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3CD2528A19C008294A7 /* MainViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37B82B402528B59000B912D3 /* OffsetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetViewController.swift; sourceTree = "<group>"; };
+		37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetBuilder.swift; sourceTree = "<group>"; };
 		3B7FB3C62528A19C008294A7 /* SleepHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7FB3C92528A19C008294A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7FB3CB2528A19C008294A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37B82B442528B5A200B912D3 /* Offset */ = {
+			isa = PBXGroup;
+			children = (
+				37B82B4B2528B65900B912D3 /* Builder */,
+				37B82B462528B5E300B912D3 /* Controller */,
+			);
+			path = Offset;
+			sourceTree = "<group>";
+		};
+		37B82B462528B5E300B912D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37B82B402528B59000B912D3 /* OffsetViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37B82B4B2528B65900B912D3 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		3B7FB3BD2528A19B008294A7 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +91,9 @@
 		3B7FB3C82528A19C008294A7 /* SleepHelper */ = {
 			isa = PBXGroup;
 			children = (
+				37B82B442528B5A200B912D3 /* Offset */,
 				3B7FB3F12528A8F9008294A7 /* SupportFiles */,
-				3B7FB3EC2528A8B0008294A7 /* MainController */,
+				3B7FB3EC2528A8B0008294A7 /* Main */,
 				3B7FB3CF2528A19C008294A7 /* Main.storyboard */,
 				3B7FB3D22528A19C008294A7 /* Assets.xcassets */,
 				3B7FB3D42528A19C008294A7 /* LaunchScreen.storyboard */,
@@ -72,7 +102,7 @@
 			path = SleepHelper;
 			sourceTree = "<group>";
 		};
-		3B7FB3EC2528A8B0008294A7 /* MainController */ = {
+		3B7FB3EC2528A8B0008294A7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				3B7FB3ED2528A8C6008294A7 /* Controller */,
@@ -80,7 +110,7 @@
 				3B7FB3EF2528A8DF008294A7 /* Router */,
 				3B7FB3F02528A8ED008294A7 /* Bilder */,
 			);
-			path = MainController;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		3B7FB3ED2528A8C6008294A7 /* Controller */ = {
@@ -195,8 +225,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7FB3CE2528A19C008294A7 /* MainViewController.swift in Sources */,
+				37B82B412528B59000B912D3 /* OffsetViewController.swift in Sources */,
 				3B7FB3CA2528A19C008294A7 /* AppDelegate.swift in Sources */,
 				3B7FB3CC2528A19C008294A7 /* SceneDelegate.swift in Sources */,
+				37B82B4D2528B69100B912D3 /* OffsetBuilder.swift in Sources */,
 				3B7FB3E62528A435008294A7 /* MainBulder.swift in Sources */,
 				3B7FB3DF2528A2B6008294A7 /* MainPresenter.swift in Sources */,
 				3B7FB3E92528A85A008294A7 /* MainRouter.swift in Sources */,
@@ -347,13 +379,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M7S29Z8NZS;
+				DEVELOPMENT_TEAM = 83X7MS6AY2;
 				INFOPLIST_FILE = SleepHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = c4.SleepHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = c4.SleepHelper1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -366,13 +398,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M7S29Z8NZS;
+				DEVELOPMENT_TEAM = 83X7MS6AY2;
 				INFOPLIST_FILE = SleepHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = c4.SleepHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = c4.SleepHelper1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
