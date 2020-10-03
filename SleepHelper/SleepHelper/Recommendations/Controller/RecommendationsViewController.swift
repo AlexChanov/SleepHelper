@@ -7,23 +7,20 @@
 
 import UIKit
 
-class RecommendationsViewController: UIViewController {
+protocol RecommendationsViewProtocol: class {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+}
 
-        // Do any additional setup after loading the view.
-    }
-    
+final class RecommendationsViewController: UIViewController, RecommendationsViewProtocol{
+	
+	var presenter: RecommendationsPresenterProtocol?
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+		override func viewDidLoad() {
+				super.viewDidLoad()
+				view.backgroundColor = .red
+		}
+	
+	override func viewDidLayoutSubviews() {
+		super.viewDidLayoutSubviews()
+	}
 }
