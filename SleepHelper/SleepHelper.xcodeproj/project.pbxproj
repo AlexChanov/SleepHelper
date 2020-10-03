@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		37B82B412528B59000B912D3 /* OffsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B402528B59000B912D3 /* OffsetViewController.swift */; };
 		37B82B4D2528B69100B912D3 /* OffsetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */; };
+		37E7CB432528CFFA00117BEF /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 37E7CB422528CFFA00117BEF /* Charts */; };
 		3B7FB3CA2528A19C008294A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3C92528A19C008294A7 /* AppDelegate.swift */; };
 		3B7FB3CC2528A19C008294A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3CB2528A19C008294A7 /* SceneDelegate.swift */; };
 		3B7FB3CE2528A19C008294A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3CD2528A19C008294A7 /* MainViewController.swift */; };
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E7CB432528CFFA00117BEF /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +172,9 @@
 			dependencies = (
 			);
 			name = SleepHelper;
+			packageProductDependencies = (
+				37E7CB422528CFFA00117BEF /* Charts */,
+			);
 			productName = SleepHelper;
 			productReference = 3B7FB3C62528A19C008294A7 /* SleepHelper.app */;
 			productType = "com.apple.product-type.application";
@@ -197,6 +202,9 @@
 				Base,
 			);
 			mainGroup = 3B7FB3BD2528A19B008294A7;
+			packageReferences = (
+				37E7CB412528CFFA00117BEF /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 3B7FB3C72528A19C008294A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -378,6 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83X7MS6AY2;
 				INFOPLIST_FILE = SleepHelper/Info.plist;
@@ -387,6 +396,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = c4.SleepHelper1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -397,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83X7MS6AY2;
 				INFOPLIST_FILE = SleepHelper/Info.plist;
@@ -406,6 +417,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = c4.SleepHelper1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -433,6 +445,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37E7CB412528CFFA00117BEF /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37E7CB422528CFFA00117BEF /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37E7CB412528CFFA00117BEF /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B7FB3BE2528A19B008294A7 /* Project object */;
 }
