@@ -1,19 +1,19 @@
 //
-//  OffsetViewController.swift
-//  
+//  NotificationsViewController.swift
+//  SleepHelper
 //
 //  Created by Дмитрий И. on 03.10.2020.
 //
 
 import UIKit
 
-protocol OffsetViewProtocol: class {
+protocol NotificationsViewProtocol: class {
 
 }
 
-final class OffsetViewController: UIViewController, OffsetViewProtocol{
+final class NotificationsViewController: UIViewController, NotificationsViewProtocol{
 	
-	var presenter: OffsetPresenterProtocol?
+	var presenter: NotificationsPresenterProtocol?
 
 		override func viewDidLoad() {
 				super.viewDidLoad()
