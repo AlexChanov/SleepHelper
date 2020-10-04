@@ -9,7 +9,7 @@ import UIKit
 
 final class ProfileBuilder {
 
-		public func createMainModule() -> UIViewController {
+		public func createProfileModule() -> UIViewController {
 				let view = ProfileViewController()
 				let router = ProfileRouter(controller: view)
 				let presenter = ProfilePresenter(view: view, router: router)

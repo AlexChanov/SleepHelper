@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import RealmSwift
 
 protocol ProfileViewProtocol: class {
 	
@@ -15,9 +16,30 @@ protocol ProfileViewProtocol: class {
 final class ProfileViewController: UIViewController, ProfileViewProtocol{
 	
 	var presenter: ProfilePresenterProtocol?
-	let sleepingButton = UIButton(type: .system)
-	let trainingsButton = UIButton(type: .system)
-	let swiftuiController = UIHostingController(rootView: ProfileSwiftUIView())
+	
+	lazy var swiftuiController = UIHostingController(
+		rootView: ProfileSwiftUIView(
+			duration: data().1 ?? 0,
+			picker: data().0 ?? Date(),
+			doneCompletion: { date, duration in
+				self.presenter?.done(date: date, duration: duration)
+				
+			}, backCompletion: { self.presenter?.back() }
+			))
+	
+	func data() -> (Date?, Double?) {
+		let config = Realm.Configuration(schemaVersion: 1)
+		
+		do {
+			let realm = try Realm(configuration: config)
+			let result = realm.objects(ProfileModel.self)
+			print(result)
+			return (result.last?.timeAwake, result.last?.duration)
+		} catch {
+			print(error.localizedDescription)
+		}
+		return (Date(), 0)
+	}
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -36,8 +58,15 @@ struct ProfileSwiftUIView: View {
 	@State var workoutPressed = false
 	let days = ["MON", "TUE", "WED", "THU", "FRI", "SUT", "SUN", ]
 	@State private var selectedDays: Set<String> = []
-	@State private var duration = 0.0
-	@State private var picker = Date()
+	@State var duration = 0.0
+	@State var picker = Date()
+	let doneCompletion: (Date, Double)->Void
+	let backCompletion: ()->Void
+//	init(doneCompletion: @escaping ()->(),
+//			 backCompletion: @escaping ()->()) {
+//		self.doneCompletion = doneCompletion
+//		self.backCompletion = backCompletion
+//	}
 	
 	var body: some View {
 		VStack {
@@ -69,6 +98,25 @@ struct ProfileSwiftUIView: View {
 //			}
 //			.padding(.vertical, 16)
 //			if !workoutPressed {
+			
+			HStack{
+				Image(systemName: "arrow.left")
+					.padding(.trailing, 27)
+					.onTapGesture{
+						backCompletion()
+					}
+				Text("Profile")
+					.font(.system(size: 36))
+					.fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+				Spacer()
+				Text("Done")
+					.font(.system(size: 17))
+					.onTapGesture{
+						doneCompletion(picker, duration)
+					}
+			}
+			.foregroundColor(.textColor)
+			.padding(.top)
 				VStack(alignment: .leading) {
 					VStack {
 						HStack {
@@ -123,6 +171,7 @@ struct ProfileSwiftUIView: View {
 					RecomendationView(
 						title: "Recommendations for nightly sleep", text: "Healthy adults need between 7 and 9 hours of sleep per night. Sleep powers the mind, restores the body, and fortifies virtually every system in the body.")
 				}
+				.padding(.top)
 //			}
 //			else {
 //				VStack() {
@@ -168,11 +217,12 @@ struct ProfileSwiftUIView: View {
 		}
 		.padding(24)
 		.background(Color("BackgroundColor"))
+		.edgesIgnoringSafeArea(.top)
 	}
 }
 
-struct ProfilePreview: PreviewProvider {
-	static var previews: some View {
-		ProfileSwiftUIView()
-	}
-}
+//struct ProfilePreview: PreviewProvider {
+//	static var previews: some View {
+//		ProfileSwiftUIView()
+//	}
+//}

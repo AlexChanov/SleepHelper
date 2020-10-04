@@ -15,7 +15,7 @@
 		37D1E21B2529F93F00B80B9D /* RecomendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E21A2529F93F00B80B9D /* RecomendationView.swift */; };
 		37D1E226252A045B00B80B9D /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E225252A045B00B80B9D /* HelperClass.swift */; };
 		37D1E229252A1E0500B80B9D /* RealmClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E228252A1E0500B80B9D /* RealmClass.swift */; };
-		37E7CB432528CFFA00117BEF /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 37E7CB422528CFFA00117BEF /* SwiftPackageProductDependency */; };
+		37E7CB432528CFFA00117BEF /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 37E7CB422528CFFA00117BEF /* Charts */; };
 		37E7CB462528E3D400117BEF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB452528E3D400117BEF /* ProfileViewController.swift */; };
 		37E7CB4C2528E41C00117BEF /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB4B2528E41C00117BEF /* ProfilePresenter.swift */; };
 		37E7CB4F2528E42900117BEF /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB4E2528E42900117BEF /* ProfileRouter.swift */; };
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37E7CB432528CFFA00117BEF /* BuildFile in Frameworks */,
+				37E7CB432528CFFA00117BEF /* Charts in Frameworks */,
 				0467D24BFB25825BF8470AC1 /* Pods_SleepHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,7 +493,6 @@
 				3ED47CE70D0C67D5988801FC /* Pods-SleepHelper.debug.xcconfig */,
 				A5F0BBAB56F906BFA0C3F561 /* Pods-SleepHelper.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -516,7 +515,7 @@
 			);
 			name = SleepHelper;
 			packageProductDependencies = (
-				37E7CB422528CFFA00117BEF /* SwiftPackageProductDependency */,
+				37E7CB422528CFFA00117BEF /* Charts */,
 			);
 			productName = SleepHelper;
 			productReference = 3B7FB3C62528A19C008294A7 /* SleepHelper.app */;
@@ -546,7 +545,7 @@
 			);
 			mainGroup = 3B7FB3BD2528A19B008294A7;
 			packageReferences = (
-				37E7CB412528CFFA00117BEF /* RemoteSwiftPackageReference */,
+				37E7CB412528CFFA00117BEF /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 3B7FB3C72528A19C008294A7 /* Products */;
 			projectDirPath = "";
@@ -862,7 +861,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		37E7CB412528CFFA00117BEF /* RemoteSwiftPackageReference */ = {
+		37E7CB412528CFFA00117BEF /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielgindi/Charts";
 			requirement = {
@@ -873,9 +872,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		37E7CB422528CFFA00117BEF /* SwiftPackageProductDependency */ = {
+		37E7CB422528CFFA00117BEF /* Charts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 37E7CB412528CFFA00117BEF /* RemoteSwiftPackageReference */;
+			package = 37E7CB412528CFFA00117BEF /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */
