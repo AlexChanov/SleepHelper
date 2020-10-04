@@ -45,6 +45,7 @@
 		3B7FB3E62528A435008294A7 /* MainBulder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3E52528A435008294A7 /* MainBulder.swift */; };
 		3B7FB3E92528A85A008294A7 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3E82528A85A008294A7 /* MainRouter.swift */; };
 		3B7FB4002529F7FC008294A7 /* ClockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3FF2529F7FC008294A7 /* ClockHelper.swift */; };
+		3B7FB40D252A223F008294A7 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB40C252A223F008294A7 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		3B7FB3E52528A435008294A7 /* MainBulder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBulder.swift; sourceTree = "<group>"; };
 		3B7FB3E82528A85A008294A7 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		3B7FB3FF2529F7FC008294A7 /* ClockHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockHelper.swift; sourceTree = "<group>"; };
+		3B7FB40C252A223F008294A7 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,7 +391,6 @@
 			isa = PBXGroup;
 			children = (
 				3B7FB3FE2529F7DD008294A7 /* Service */,
-				37B82B442528B5A200B912D3 /* Offset */,
 				37D1E2172529C8B300B80B9D /* Extensions */,
 				3B7FB3F12528A8F9008294A7 /* SupportFiles */,
 				37E7CBBA2528E80800117BEF /* AboutUs */,
@@ -463,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7FB3FF2529F7FC008294A7 /* ClockHelper.swift */,
+				3B7FB40C252A223F008294A7 /* Notifications.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -547,6 +549,7 @@
 				37E7CBB12528E7E800117BEF /* AboutUsBuilder.swift in Sources */,
 				37E7CBA82528E78F00117BEF /* AboutUsViewController.swift in Sources */,
 				3B7FB3CE2528A19C008294A7 /* MainViewController.swift in Sources */,
+				3B7FB40D252A223F008294A7 /* Notifications.swift in Sources */,
 				37B82B412528B59000B912D3 /* OffsetViewController.swift in Sources */,
 				37D1E2112529C84D00B80B9D /* Color+Ext.swift in Sources */,
 				3B7FB3CA2528A19C008294A7 /* AppDelegate.swift in Sources */,

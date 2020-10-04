@@ -38,10 +38,11 @@ final class MainViewController: UIViewController, MainViewProtocol{
 
     // MARK: - Properties
 
-	var presenter: MainPresenterProtocol?
-    let clockHelper = ClockHelper()
-    let startSleepHour: Float = 24.00
-    var wakeUpTime: CGFloat = 7.00
+    var presenter: MainPresenterProtocol?
+    private let notifications = Notifications()
+    private let clockHelper = ClockHelper()
+    private var startSleepHour: Float = 24.00
+    private var wakeUpTime: CGFloat = 7.00
 
     // MARK: - Lifecycle
 
@@ -74,10 +75,12 @@ final class MainViewController: UIViewController, MainViewProtocol{
         wakeUpLabel.text = "Wake up \n \(wakeUpTime)"
         wakeUpLabel.numberOfLines = 0
         wakeUpLabel.textAlignment = .center
+        wakeUpLabel.textColor = .textColor
 
         bedTimeLabel.text = "BedTime \n \(startSleepHour)"
         bedTimeLabel.numberOfLines = 0
         bedTimeLabel.textAlignment = .center
+        bedTimeLabel.textColor = .textColor
 
         clockBackgroundImage.image = #imageLiteral(resourceName: "Progress bar circle")
 
@@ -85,11 +88,11 @@ final class MainViewController: UIViewController, MainViewProtocol{
         clockNumberImage.tintColor = .black
 
         addButton.setImage(#imageLiteral(resourceName: "addButtomIcon"), for: .normal)
+        addButton.addTarget(self, action: #selector(showSettings), for: .touchUpInside)
 
         setDataCount(Int(3), range: UInt32(24))
 
-        profileButton.setBackgroundImage(#imageLiteral(resourceName: "arrow-left-line"), for: .normal)
-        profileButton.addTarget(self, action: #selector(showProfile), for: .touchUpInside)
+//        profileButton.setBackgroundImage(#imageLiteral(resourceName: "arrow-left-line"), for: .normal)
 
         settingsButton.setBackgroundImage(#imageLiteral(resourceName: "heart-fill"), for: .normal)
         settingsButton.addTarget(self, action: #selector(showSettings), for: .touchUpInside)
@@ -99,17 +102,21 @@ final class MainViewController: UIViewController, MainViewProtocol{
         view.addSubview(clockNumberImage)
         view.addSubview(addButton)
         view.addSubview(profileButton)
-        view.addSubview(settingsButton)
+//        view.addSubview(settingsButton)
         view.addSubview(stackView)
     }
 
     @objc
     private func showProfile() {
 
+        let calendar = Calendar.current
+        let addOneWeekToCurrentDate = calendar.date(byAdding: .minute, value: 1, to: Date())
+        notifications.notificationSettings(date: addOneWeekToCurrentDate!)
     }
 
     @objc
     private func showSettings() {
+        
 
     }
 
@@ -146,49 +153,47 @@ final class MainViewController: UIViewController, MainViewProtocol{
         chartView.drawHoleEnabled = true
         chartView.drawEntryLabelsEnabled = false
         chartView.rotationAngle = CGFloat(clockHelper.getAngelFromHour(startSleepHour))
-        chartView.rotationEnabled = true
+        chartView.rotationEnabled = false
         chartView.highlightPerTapEnabled = true
-
-        let paragraphStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
-        paragraphStyle.lineBreakMode = .byTruncatingTail
-        paragraphStyle.alignment = .center
-
-        let centerText = NSMutableAttributedString(string: "Charts\nby Daniel Cohen Gindi")
-        centerText.setAttributes([.font : UIFont(name: "HelveticaNeue-Light", size: 13)!,
-                                  .paragraphStyle : paragraphStyle], range: NSRange(location: 0, length: centerText.length))
-        centerText.addAttributes([.font : UIFont(name: "HelveticaNeue-Light", size: 11)!,
-                                  .foregroundColor : UIColor.gray], range: NSRange(location: 10, length: centerText.length - 10))
-        centerText.addAttributes([.font : UIFont(name: "HelveticaNeue-Light", size: 11)!,
-                                  .foregroundColor : UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1)], range: NSRange(location: centerText.length - 19, length: 19))
-        chartView.centerAttributedText = centerText;
 
         chartView.delegate = self
 
         chartView.entryLabelColor = .white
         chartView.entryLabelFont = .systemFont(ofSize: 12, weight: .light)
 
-
         chartView.animate(xAxisDuration: 1.4, easingOption: .easeOutBack)
     }
 
 func setDataCount(_ count: Int, range: UInt32) {
-    let entries = (0..<count).map { (i) -> PieChartDataEntry in
-        // IMPORTANT: In a PieChart, no values (Entry) should have the same xIndex (even if from different DataSets), since no values can be drawn above each other.
-        return PieChartDataEntry(value: Double(arc4random_uniform(range) + range / 5),
-                                 label: nil,
-                                 icon: nil)
-    }
 
-    let set = PieChartDataSet(entries: entries, label: "")
+    let paragraphStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
+    paragraphStyle.lineBreakMode = .byTruncatingTail
+    paragraphStyle.alignment = .center
+
+    let centerText = NSMutableAttributedString(string: "Charts\nby Daniel Cohen Gindi")
+    centerText.setAttributes([.font : UIFont(name: "HelveticaNeue-Light", size: 13)!,
+                              .paragraphStyle : paragraphStyle], range: NSRange(location: 0, length: centerText.length))
+    centerText.addAttributes([.font : UIFont(name: "HelveticaNeue-Light", size: 11)!,
+                              .foregroundColor : UIColor.gray], range: NSRange(location: 10, length: centerText.length - 10))
+    centerText.addAttributes([.font : UIFont(name: "HelveticaNeue-Light", size: 11)!,
+                              .foregroundColor : UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1)], range: NSRange(location: centerText.length - 19, length: 19))
+    chartView.centerAttributedText = centerText
+
+    let entries = [PieChartDataEntry(value: Double(wakeUpTime),
+                                     label: "Время сна",
+                                     icon: nil),
+                   PieChartDataEntry(value: 13,label: "",icon: nil),
+                   PieChartDataEntry(value: 4,label: "Исключить еду",icon: nil),]
+
+    let set = PieChartDataSet(entries: entries, label:"" )
     set.drawIconsEnabled = false
     set.sliceSpace = 2
-    set.colors = [.green, .clear, .red]
+    set.colors = [#colorLiteral(red: 0.2745098039, green: 0.4196078431, blue: 1, alpha: 1), .clear, #colorLiteral(red: 0.1333333333, green: 0.9333333333, blue: 1, alpha: 1)]
 
     let data = PieChartData(dataSet: set)
     data.setValueTextColor(.clear)
 
     chartView.data = data
-    chartView.highlightValues(nil)
 }
 }
 
