@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MainBuilder {
+final class MainBuilder { 
 
     public func createMainModule() -> UIViewController {
         let view = MainViewController()

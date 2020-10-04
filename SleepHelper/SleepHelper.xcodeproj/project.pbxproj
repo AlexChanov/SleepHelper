@@ -3,10 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37B82B412528B59000B912D3 /* OffsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B402528B59000B912D3 /* OffsetViewController.swift */; };
+		37B82B4D2528B69100B912D3 /* OffsetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */; };
+		37D1E2112529C84D00B80B9D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E2102529C84D00B80B9D /* Color+Ext.swift */; };
+		37D1E2152529C89D00B80B9D /* Button+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E2142529C89D00B80B9D /* Button+Ext.swift */; };
+		37E7CB432528CFFA00117BEF /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 37E7CB422528CFFA00117BEF /* Charts */; };
+		37E7CB462528E3D400117BEF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB452528E3D400117BEF /* ProfileViewController.swift */; };
+		37E7CB4C2528E41C00117BEF /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB4B2528E41C00117BEF /* ProfilePresenter.swift */; };
+		37E7CB4F2528E42900117BEF /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB4E2528E42900117BEF /* ProfileRouter.swift */; };
+		37E7CB522528E43B00117BEF /* ProfileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB512528E43A00117BEF /* ProfileBuilder.swift */; };
+		37E7CB5B2528E4BD00117BEF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB5A2528E4BD00117BEF /* SettingsViewController.swift */; };
+		37E7CB5E2528E4CF00117BEF /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB5D2528E4CF00117BEF /* SettingsPresenter.swift */; };
+		37E7CB612528E4D800117BEF /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB602528E4D800117BEF /* SettingsRouter.swift */; };
+		37E7CB642528E4E200117BEF /* SettingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB632528E4E200117BEF /* SettingsBuilder.swift */; };
+		37E7CB712528E52700117BEF /* OffsetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB702528E52700117BEF /* OffsetPresenter.swift */; };
+		37E7CB742528E53500117BEF /* OffsetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB732528E53500117BEF /* OffsetRouter.swift */; };
+		37E7CB7B2528E5B600117BEF /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB7A2528E5B600117BEF /* RecommendationsViewController.swift */; };
+		37E7CB7E2528E5CC00117BEF /* RecommendationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB7D2528E5CC00117BEF /* RecommendationsPresenter.swift */; };
+		37E7CB812528E5DC00117BEF /* RecommendationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB802528E5DC00117BEF /* RecommendationsRouter.swift */; };
+		37E7CB842528E5ED00117BEF /* RecommendationsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB832528E5ED00117BEF /* RecommendationsBuilder.swift */; };
+		37E7CB922528E67200117BEF /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB912528E67200117BEF /* NotificationsViewController.swift */; };
+		37E7CB952528E6B700117BEF /* NotificationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB942528E6B700117BEF /* NotificationsPresenter.swift */; };
+		37E7CB982528E6D200117BEF /* NotificationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB972528E6D200117BEF /* NotificationsRouter.swift */; };
+		37E7CB9B2528E6DC00117BEF /* NotificationsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB9A2528E6DC00117BEF /* NotificationsBuilder.swift */; };
+		37E7CBA82528E78F00117BEF /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CBA72528E78F00117BEF /* AboutUsViewController.swift */; };
+		37E7CBAB2528E7A000117BEF /* AboutUsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CBAA2528E7A000117BEF /* AboutUsPresenter.swift */; };
+		37E7CBAE2528E7A800117BEF /* AboutUsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CBAD2528E7A800117BEF /* AboutUsRouter.swift */; };
+		37E7CBB12528E7E800117BEF /* AboutUsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CBB02528E7E800117BEF /* AboutUsBuilder.swift */; };
+		37E7CBBE2528EE1100117BEF /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CBBD2528EE1100117BEF /* UIColor+Ext.swift */; };
 		3B7FB3CA2528A19C008294A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3C92528A19C008294A7 /* AppDelegate.swift */; };
 		3B7FB3CC2528A19C008294A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3CB2528A19C008294A7 /* SceneDelegate.swift */; };
 		3B7FB3CE2528A19C008294A7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3CD2528A19C008294A7 /* MainViewController.swift */; };
@@ -19,6 +47,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37B82B402528B59000B912D3 /* OffsetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetViewController.swift; sourceTree = "<group>"; };
+		37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetBuilder.swift; sourceTree = "<group>"; };
+		37D1E2102529C84D00B80B9D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		37D1E2142529C89D00B80B9D /* Button+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Ext.swift"; sourceTree = "<group>"; };
+		37E7CB452528E3D400117BEF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		37E7CB4B2528E41C00117BEF /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		37E7CB4E2528E42900117BEF /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		37E7CB512528E43A00117BEF /* ProfileBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBuilder.swift; sourceTree = "<group>"; };
+		37E7CB5A2528E4BD00117BEF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		37E7CB5D2528E4CF00117BEF /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		37E7CB602528E4D800117BEF /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		37E7CB632528E4E200117BEF /* SettingsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBuilder.swift; sourceTree = "<group>"; };
+		37E7CB702528E52700117BEF /* OffsetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPresenter.swift; sourceTree = "<group>"; };
+		37E7CB732528E53500117BEF /* OffsetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetRouter.swift; sourceTree = "<group>"; };
+		37E7CB7A2528E5B600117BEF /* RecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
+		37E7CB7D2528E5CC00117BEF /* RecommendationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsPresenter.swift; sourceTree = "<group>"; };
+		37E7CB802528E5DC00117BEF /* RecommendationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsRouter.swift; sourceTree = "<group>"; };
+		37E7CB832528E5ED00117BEF /* RecommendationsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsBuilder.swift; sourceTree = "<group>"; };
+		37E7CB912528E67200117BEF /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		37E7CB942528E6B700117BEF /* NotificationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPresenter.swift; sourceTree = "<group>"; };
+		37E7CB972528E6D200117BEF /* NotificationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsRouter.swift; sourceTree = "<group>"; };
+		37E7CB9A2528E6DC00117BEF /* NotificationsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsBuilder.swift; sourceTree = "<group>"; };
+		37E7CBA72528E78F00117BEF /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		37E7CBAA2528E7A000117BEF /* AboutUsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsPresenter.swift; sourceTree = "<group>"; };
+		37E7CBAD2528E7A800117BEF /* AboutUsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsRouter.swift; sourceTree = "<group>"; };
+		37E7CBB02528E7E800117BEF /* AboutUsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsBuilder.swift; sourceTree = "<group>"; };
+		37E7CBBD2528EE1100117BEF /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		3B7FB3C62528A19C008294A7 /* SleepHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7FB3C92528A19C008294A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7FB3CB2528A19C008294A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,12 +92,281 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E7CB432528CFFA00117BEF /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37B82B442528B5A200B912D3 /* Offset */ = {
+			isa = PBXGroup;
+			children = (
+				37B82B462528B5E300B912D3 /* Controller */,
+				37E7CB762528E53D00117BEF /* Presenter */,
+				37E7CB782528E54400117BEF /* Router */,
+				37B82B4B2528B65900B912D3 /* Builder */,
+			);
+			path = Offset;
+			sourceTree = "<group>";
+		};
+		37B82B462528B5E300B912D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37B82B402528B59000B912D3 /* OffsetViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37B82B4B2528B65900B912D3 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		37D1E2172529C8B300B80B9D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CBBD2528EE1100117BEF /* UIColor+Ext.swift */,
+				37D1E2102529C84D00B80B9D /* Color+Ext.swift */,
+				37D1E2142529C89D00B80B9D /* Button+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		37E7CB482528E3DA00117BEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB452528E3D400117BEF /* ProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37E7CB492528E3E900117BEF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB482528E3DA00117BEF /* Controller */,
+				37E7CB542528E44200117BEF /* Presenter */,
+				37E7CB562528E46800117BEF /* Router */,
+				37E7CB582528E46F00117BEF /* Builder */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		37E7CB542528E44200117BEF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB4B2528E41C00117BEF /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		37E7CB562528E46800117BEF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB4E2528E42900117BEF /* ProfileRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		37E7CB582528E46F00117BEF /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB512528E43A00117BEF /* ProfileBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		37E7CB662528E4E600117BEF /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB632528E4E200117BEF /* SettingsBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		37E7CB682528E4EC00117BEF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB602528E4D800117BEF /* SettingsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		37E7CB6A2528E4F500117BEF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB5D2528E4CF00117BEF /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		37E7CB6C2528E4FF00117BEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB5A2528E4BD00117BEF /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37E7CB6E2528E50C00117BEF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB6C2528E4FF00117BEF /* Controller */,
+				37E7CB6A2528E4F500117BEF /* Presenter */,
+				37E7CB682528E4EC00117BEF /* Router */,
+				37E7CB662528E4E600117BEF /* Builder */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		37E7CB762528E53D00117BEF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB702528E52700117BEF /* OffsetPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		37E7CB782528E54400117BEF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB732528E53500117BEF /* OffsetRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		37E7CB862528E5F100117BEF /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB832528E5ED00117BEF /* RecommendationsBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		37E7CB882528E5F800117BEF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB802528E5DC00117BEF /* RecommendationsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		37E7CB8A2528E63000117BEF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB7D2528E5CC00117BEF /* RecommendationsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		37E7CB8C2528E63E00117BEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB7A2528E5B600117BEF /* RecommendationsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37E7CB8F2528E64B00117BEF /* Recommendations */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB8C2528E63E00117BEF /* Controller */,
+				37E7CB8A2528E63000117BEF /* Presenter */,
+				37E7CB882528E5F800117BEF /* Router */,
+				37E7CB862528E5F100117BEF /* Builder */,
+			);
+			path = Recommendations;
+			sourceTree = "<group>";
+		};
+		37E7CB9D2528E6E100117BEF /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB9A2528E6DC00117BEF /* NotificationsBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		37E7CB9F2528E6E700117BEF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB972528E6D200117BEF /* NotificationsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		37E7CBA12528E6ED00117BEF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB942528E6B700117BEF /* NotificationsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		37E7CBA32528E6F900117BEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CB912528E67200117BEF /* NotificationsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37E7CBA52528E70500117BEF /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CBA32528E6F900117BEF /* Controller */,
+				37E7CBA12528E6ED00117BEF /* Presenter */,
+				37E7CB9F2528E6E700117BEF /* Router */,
+				37E7CB9D2528E6E100117BEF /* Builder */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		37E7CBB32528E7EB00117BEF /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CBB02528E7E800117BEF /* AboutUsBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		37E7CBB52528E7F100117BEF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CBAD2528E7A800117BEF /* AboutUsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		37E7CBB72528E7F800117BEF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CBAA2528E7A000117BEF /* AboutUsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		37E7CBB92528E7FE00117BEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CBA72528E78F00117BEF /* AboutUsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37E7CBBA2528E80800117BEF /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CBB92528E7FE00117BEF /* Controller */,
+				37E7CBB72528E7F800117BEF /* Presenter */,
+				37E7CBB52528E7F100117BEF /* Router */,
+				37E7CBB32528E7EB00117BEF /* Builder */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
 		3B7FB3BD2528A19B008294A7 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +386,15 @@
 		3B7FB3C82528A19C008294A7 /* SleepHelper */ = {
 			isa = PBXGroup;
 			children = (
+				37D1E2172529C8B300B80B9D /* Extensions */,
 				3B7FB3F12528A8F9008294A7 /* SupportFiles */,
-				3B7FB3EC2528A8B0008294A7 /* MainController */,
+				37E7CBBA2528E80800117BEF /* AboutUs */,
+				37E7CBA52528E70500117BEF /* Notifications */,
+				37E7CB8F2528E64B00117BEF /* Recommendations */,
+				37E7CB6E2528E50C00117BEF /* Settings */,
+				37B82B442528B5A200B912D3 /* Offset */,
+				37E7CB492528E3E900117BEF /* Profile */,
+				3B7FB3EC2528A8B0008294A7 /* Main */,
 				3B7FB3CF2528A19C008294A7 /* Main.storyboard */,
 				3B7FB3D22528A19C008294A7 /* Assets.xcassets */,
 				3B7FB3D42528A19C008294A7 /* LaunchScreen.storyboard */,
@@ -72,7 +403,7 @@
 			path = SleepHelper;
 			sourceTree = "<group>";
 		};
-		3B7FB3EC2528A8B0008294A7 /* MainController */ = {
+		3B7FB3EC2528A8B0008294A7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				3B7FB3ED2528A8C6008294A7 /* Controller */,
@@ -80,7 +411,7 @@
 				3B7FB3EF2528A8DF008294A7 /* Router */,
 				3B7FB3F02528A8ED008294A7 /* Bilder */,
 			);
-			path = MainController;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		3B7FB3ED2528A8C6008294A7 /* Controller */ = {
@@ -140,6 +471,9 @@
 			dependencies = (
 			);
 			name = SleepHelper;
+			packageProductDependencies = (
+				37E7CB422528CFFA00117BEF /* Charts */,
+			);
 			productName = SleepHelper;
 			productReference = 3B7FB3C62528A19C008294A7 /* SleepHelper.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +501,9 @@
 				Base,
 			);
 			mainGroup = 3B7FB3BD2528A19B008294A7;
+			packageReferences = (
+				37E7CB412528CFFA00117BEF /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 3B7FB3C72528A19C008294A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -194,12 +531,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E7CB842528E5ED00117BEF /* RecommendationsBuilder.swift in Sources */,
+				37E7CBB12528E7E800117BEF /* AboutUsBuilder.swift in Sources */,
+				37E7CBA82528E78F00117BEF /* AboutUsViewController.swift in Sources */,
 				3B7FB3CE2528A19C008294A7 /* MainViewController.swift in Sources */,
+				37B82B412528B59000B912D3 /* OffsetViewController.swift in Sources */,
+				37D1E2112529C84D00B80B9D /* Color+Ext.swift in Sources */,
 				3B7FB3CA2528A19C008294A7 /* AppDelegate.swift in Sources */,
+				37E7CBBE2528EE1100117BEF /* UIColor+Ext.swift in Sources */,
 				3B7FB3CC2528A19C008294A7 /* SceneDelegate.swift in Sources */,
+				37E7CB7B2528E5B600117BEF /* RecommendationsViewController.swift in Sources */,
+				37B82B4D2528B69100B912D3 /* OffsetBuilder.swift in Sources */,
 				3B7FB3E62528A435008294A7 /* MainBulder.swift in Sources */,
+				37E7CB9B2528E6DC00117BEF /* NotificationsBuilder.swift in Sources */,
+				37E7CB462528E3D400117BEF /* ProfileViewController.swift in Sources */,
+				37E7CB522528E43B00117BEF /* ProfileBuilder.swift in Sources */,
+				37E7CB7E2528E5CC00117BEF /* RecommendationsPresenter.swift in Sources */,
+				37E7CB642528E4E200117BEF /* SettingsBuilder.swift in Sources */,
+				37E7CB742528E53500117BEF /* OffsetRouter.swift in Sources */,
+				37E7CB712528E52700117BEF /* OffsetPresenter.swift in Sources */,
+				37D1E2152529C89D00B80B9D /* Button+Ext.swift in Sources */,
 				3B7FB3DF2528A2B6008294A7 /* MainPresenter.swift in Sources */,
+				37E7CB612528E4D800117BEF /* SettingsRouter.swift in Sources */,
+				37E7CB4C2528E41C00117BEF /* ProfilePresenter.swift in Sources */,
+				37E7CB952528E6B700117BEF /* NotificationsPresenter.swift in Sources */,
+				37E7CBAB2528E7A000117BEF /* AboutUsPresenter.swift in Sources */,
+				37E7CB922528E67200117BEF /* NotificationsViewController.swift in Sources */,
+				37E7CB5B2528E4BD00117BEF /* SettingsViewController.swift in Sources */,
 				3B7FB3E92528A85A008294A7 /* MainRouter.swift in Sources */,
+				37E7CB4F2528E42900117BEF /* ProfileRouter.swift in Sources */,
+				37E7CB982528E6D200117BEF /* NotificationsRouter.swift in Sources */,
+				37E7CB812528E5DC00117BEF /* RecommendationsRouter.swift in Sources */,
+				37E7CB5E2528E4CF00117BEF /* SettingsPresenter.swift in Sources */,
+				37E7CBAE2528E7A800117BEF /* AboutUsRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,15 +710,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M7S29Z8NZS;
+				DEVELOPMENT_TEAM = 83X7MS6AY2;
 				INFOPLIST_FILE = SleepHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = c4.SleepHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = c4.SleepHelper1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,15 +731,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M7S29Z8NZS;
+				DEVELOPMENT_TEAM = 83X7MS6AY2;
 				INFOPLIST_FILE = SleepHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = c4.SleepHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = c4.SleepHelper1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -401,6 +769,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37E7CB412528CFFA00117BEF /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37E7CB422528CFFA00117BEF /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37E7CB412528CFFA00117BEF /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B7FB3BE2528A19B008294A7 /* Project object */;
 }

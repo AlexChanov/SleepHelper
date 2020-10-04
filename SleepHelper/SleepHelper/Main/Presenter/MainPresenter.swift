@@ -8,10 +8,14 @@
 import Foundation
 
 protocol MainPresenterProtocol: class {
-
+	func showAddView()
 }
 
 final class MainPresenter: MainPresenterProtocol {
+	func showAddView() {
+		router?.showAddView()
+	}
+	
 
     private weak var view: MainViewProtocol?
     private let router: MainRouterProtocol?

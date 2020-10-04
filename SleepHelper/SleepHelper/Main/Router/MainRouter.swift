@@ -10,6 +10,8 @@ import UIKit
 protocol MainRouterProtocol: class {
 
     func showSettings()
+	
+		func showAddView()
 }
 
 final class MainRouter: MainRouterProtocol {
@@ -21,4 +23,10 @@ final class MainRouter: MainRouterProtocol {
     }
 
     func showSettings() {}
+	
+		func showAddView() {
+			let offsetBuilder = OffsetBuilder()
+			let offsetController = offsetBuilder.createOffsetModule()
+			controller?.present(offsetController, animated: true, completion: {})
+		}
 }
