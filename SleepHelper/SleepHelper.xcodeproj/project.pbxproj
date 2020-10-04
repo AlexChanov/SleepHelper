@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0467D24BFB25825BF8470AC1 /* Pods_SleepHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C26A836C7E9AA46D7AB624 /* Pods_SleepHelper.framework */; };
 		37B82B412528B59000B912D3 /* TimezoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B402528B59000B912D3 /* TimezoneViewController.swift */; };
 		37B82B4D2528B69100B912D3 /* TimezoneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B4C2528B69100B912D3 /* TimezoneBuilder.swift */; };
 		37D1E2112529C84D00B80B9D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E2102529C84D00B80B9D /* Color+Ext.swift */; };
 		37D1E2152529C89D00B80B9D /* Button+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E2142529C89D00B80B9D /* Button+Ext.swift */; };
 		37D1E21B2529F93F00B80B9D /* RecomendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E21A2529F93F00B80B9D /* RecomendationView.swift */; };
 		37D1E226252A045B00B80B9D /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E225252A045B00B80B9D /* HelperClass.swift */; };
-		37E7CB432528CFFA00117BEF /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 37E7CB422528CFFA00117BEF /* Charts */; };
+		37D1E229252A1E0500B80B9D /* RealmClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E228252A1E0500B80B9D /* RealmClass.swift */; };
+		37E7CB432528CFFA00117BEF /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 37E7CB422528CFFA00117BEF /* SwiftPackageProductDependency */; };
 		37E7CB462528E3D400117BEF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB452528E3D400117BEF /* ProfileViewController.swift */; };
 		37E7CB4C2528E41C00117BEF /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB4B2528E41C00117BEF /* ProfilePresenter.swift */; };
 		37E7CB4F2528E42900117BEF /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB4E2528E42900117BEF /* ProfileRouter.swift */; };
@@ -55,6 +57,7 @@
 		37D1E2142529C89D00B80B9D /* Button+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Ext.swift"; sourceTree = "<group>"; };
 		37D1E21A2529F93F00B80B9D /* RecomendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationView.swift; sourceTree = "<group>"; };
 		37D1E225252A045B00B80B9D /* HelperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperClass.swift; sourceTree = "<group>"; };
+		37D1E228252A1E0500B80B9D /* RealmClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmClass.swift; sourceTree = "<group>"; };
 		37E7CB452528E3D400117BEF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		37E7CB4B2528E41C00117BEF /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		37E7CB4E2528E42900117BEF /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
@@ -89,6 +92,9 @@
 		3B7FB3DE2528A2B6008294A7 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		3B7FB3E52528A435008294A7 /* MainBulder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBulder.swift; sourceTree = "<group>"; };
 		3B7FB3E82528A85A008294A7 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		3ED47CE70D0C67D5988801FC /* Pods-SleepHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepHelper.debug.xcconfig"; path = "Target Support Files/Pods-SleepHelper/Pods-SleepHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		40C26A836C7E9AA46D7AB624 /* Pods_SleepHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F0BBAB56F906BFA0C3F561 /* Pods-SleepHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepHelper.release.xcconfig"; path = "Target Support Files/Pods-SleepHelper/Pods-SleepHelper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,13 +102,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37E7CB432528CFFA00117BEF /* Charts in Frameworks */,
+				37E7CB432528CFFA00117BEF /* BuildFile in Frameworks */,
+				0467D24BFB25825BF8470AC1 /* Pods_SleepHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EC35A6AD03AD2FD180FFA1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40C26A836C7E9AA46D7AB624 /* Pods_SleepHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		37B82B442528B5A200B912D3 /* Timezone */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +399,8 @@
 			children = (
 				3B7FB3C82528A19C008294A7 /* SleepHelper */,
 				3B7FB3C72528A19C008294A7 /* Products */,
+				853F0D4819434921C7A8CD65 /* Pods */,
+				2EC35A6AD03AD2FD180FFA1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -465,8 +482,19 @@
 				3B7FB3C92528A19C008294A7 /* AppDelegate.swift */,
 				3B7FB3CB2528A19C008294A7 /* SceneDelegate.swift */,
 				37D1E225252A045B00B80B9D /* HelperClass.swift */,
+				37D1E228252A1E0500B80B9D /* RealmClass.swift */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		853F0D4819434921C7A8CD65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3ED47CE70D0C67D5988801FC /* Pods-SleepHelper.debug.xcconfig */,
+				A5F0BBAB56F906BFA0C3F561 /* Pods-SleepHelper.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,9 +504,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B7FB3DA2528A19D008294A7 /* Build configuration list for PBXNativeTarget "SleepHelper" */;
 			buildPhases = (
+				065312F511F80687A103F9DE /* [CP] Check Pods Manifest.lock */,
 				3B7FB3C22528A19B008294A7 /* Sources */,
 				3B7FB3C32528A19B008294A7 /* Frameworks */,
 				3B7FB3C42528A19B008294A7 /* Resources */,
+				F67301B54E52BF934D04DE7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -486,7 +516,7 @@
 			);
 			name = SleepHelper;
 			packageProductDependencies = (
-				37E7CB422528CFFA00117BEF /* Charts */,
+				37E7CB422528CFFA00117BEF /* SwiftPackageProductDependency */,
 			);
 			productName = SleepHelper;
 			productReference = 3B7FB3C62528A19C008294A7 /* SleepHelper.app */;
@@ -516,7 +546,7 @@
 			);
 			mainGroup = 3B7FB3BD2528A19B008294A7;
 			packageReferences = (
-				37E7CB412528CFFA00117BEF /* XCRemoteSwiftPackageReference "Charts" */,
+				37E7CB412528CFFA00117BEF /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 3B7FB3C72528A19C008294A7 /* Products */;
 			projectDirPath = "";
@@ -539,6 +569,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		065312F511F80687A103F9DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SleepHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F67301B54E52BF934D04DE7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SleepHelper/Pods-SleepHelper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SleepHelper/Pods-SleepHelper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SleepHelper/Pods-SleepHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B7FB3C22528A19B008294A7 /* Sources */ = {
@@ -567,6 +639,7 @@
 				37E7CB712528E52700117BEF /* TimezonePresenter.swift in Sources */,
 				37D1E2152529C89D00B80B9D /* Button+Ext.swift in Sources */,
 				3B7FB3DF2528A2B6008294A7 /* MainPresenter.swift in Sources */,
+				37D1E229252A1E0500B80B9D /* RealmClass.swift in Sources */,
 				37E7CB612528E4D800117BEF /* SettingsRouter.swift in Sources */,
 				37E7CB4C2528E41C00117BEF /* ProfilePresenter.swift in Sources */,
 				37E7CB952528E6B700117BEF /* NotificationsPresenter.swift in Sources */,
@@ -723,6 +796,7 @@
 		};
 		3B7FB3DB2528A19D008294A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ED47CE70D0C67D5988801FC /* Pods-SleepHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -744,6 +818,7 @@
 		};
 		3B7FB3DC2528A19D008294A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F0BBAB56F906BFA0C3F561 /* Pods-SleepHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -787,7 +862,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		37E7CB412528CFFA00117BEF /* XCRemoteSwiftPackageReference "Charts" */ = {
+		37E7CB412528CFFA00117BEF /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielgindi/Charts";
 			requirement = {
@@ -798,9 +873,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		37E7CB422528CFFA00117BEF /* Charts */ = {
+		37E7CB422528CFFA00117BEF /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 37E7CB412528CFFA00117BEF /* XCRemoteSwiftPackageReference "Charts" */;
+			package = 37E7CB412528CFFA00117BEF /* RemoteSwiftPackageReference */;
 			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */
