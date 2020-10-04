@@ -25,8 +25,8 @@ final class MainRouter: MainRouterProtocol {
     func showSettings() {}
 	
 		func showAddView() {
-			let offsetBuilder = OffsetBuilder()
-			let offsetController = offsetBuilder.createOffsetModule()
-			controller?.present(offsetController, animated: true, completion: {})
+			let timezoneBuilder = TimezoneBuilder()
+			let timezoneController = timezoneBuilder.createTimezoneModule()
+			controller?.present(timezoneController, animated: true, completion: {})
 		}
 }

@@ -1,5 +1,5 @@
 //
-//  OffsetBuilder.swift
+//  TimezoneBuilder.swift
 //  
 //
 //  Created by Дмитрий И. on 03.10.2020.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-final class OffsetBuilder {
+final class TimezoneBuilder {
 
-		public func createOffsetModule() -> UIViewController {
-				let view = OffsetViewController()
-				let router = OffsetRouter(controller: view)
-				let presenter = OffsetPresenter(view: view, router: router)
+		public func createTimezoneModule() -> UIViewController {
+				let view = TimezoneViewController()
+				let router = TimezoneRouter(controller: view)
+				let presenter = TimezonePresenter(view: view, router: router)
 				view.presenter = presenter
 
 				return view

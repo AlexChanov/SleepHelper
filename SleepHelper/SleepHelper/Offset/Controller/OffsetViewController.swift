@@ -1,5 +1,5 @@
 //
-//  OffsetViewController.swift
+//  TimezoneViewController.swift
 //  
 //
 //  Created by Дмитрий И. on 03.10.2020.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol OffsetViewProtocol: class {
+protocol TimezoneViewProtocol: class {
 
 }
 
-final class OffsetViewController: UIViewController, OffsetViewProtocol{
+final class TimezoneViewController: UIViewController, TimezoneViewProtocol{
 	
-	var presenter: OffsetPresenterProtocol?
+	var presenter: TimezonePresenterProtocol?
 
 		override func viewDidLoad() {
 				super.viewDidLoad()

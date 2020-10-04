@@ -1,5 +1,5 @@
 //
-//  OffsetRouter.swift
+//  TimezoneRouter.swift
 //  SleepHelper
 //
 //  Created by Дмитрий И. on 03.10.2020.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-protocol OffsetRouterProtocol: class {
+protocol TimezoneRouterProtocol: class {
 
 		func showSettings()
 	
 		func showAddView()
 }
 
-final class OffsetRouter: OffsetRouterProtocol {
+final class TimezoneRouter: TimezoneRouterProtocol {
 
 		let controller: UIViewController?
 
