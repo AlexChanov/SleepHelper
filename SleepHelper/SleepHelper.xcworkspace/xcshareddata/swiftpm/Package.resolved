@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Charts",
+        "repositoryURL": "https://github.com/danielgindi/Charts",
+        "state": {
+          "branch": "master",
+          "revision": "84fbdcf8b170110dfefea42e1f2ad7a646aea0e8",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
