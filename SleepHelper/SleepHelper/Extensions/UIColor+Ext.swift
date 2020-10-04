@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 extension UIColor {
 	static let backgroundColor = UIColor(named: "BackgroundColor")

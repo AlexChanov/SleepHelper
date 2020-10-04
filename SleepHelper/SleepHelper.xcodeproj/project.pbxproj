@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		37B82B412528B59000B912D3 /* OffsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B402528B59000B912D3 /* OffsetViewController.swift */; };
 		37B82B4D2528B69100B912D3 /* OffsetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */; };
+		37D1E2112529C84D00B80B9D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E2102529C84D00B80B9D /* Color+Ext.swift */; };
+		37D1E2152529C89D00B80B9D /* Button+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E2142529C89D00B80B9D /* Button+Ext.swift */; };
 		37E7CB432528CFFA00117BEF /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 37E7CB422528CFFA00117BEF /* Charts */; };
 		37E7CB462528E3D400117BEF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB452528E3D400117BEF /* ProfileViewController.swift */; };
 		37E7CB4C2528E41C00117BEF /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB4B2528E41C00117BEF /* ProfilePresenter.swift */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		37B82B402528B59000B912D3 /* OffsetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetViewController.swift; sourceTree = "<group>"; };
 		37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetBuilder.swift; sourceTree = "<group>"; };
+		37D1E2102529C84D00B80B9D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		37D1E2142529C89D00B80B9D /* Button+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Ext.swift"; sourceTree = "<group>"; };
 		37E7CB452528E3D400117BEF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		37E7CB4B2528E41C00117BEF /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		37E7CB4E2528E42900117BEF /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
@@ -120,6 +124,16 @@
 				37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		37D1E2172529C8B300B80B9D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37E7CBBD2528EE1100117BEF /* UIColor+Ext.swift */,
+				37D1E2102529C84D00B80B9D /* Color+Ext.swift */,
+				37D1E2142529C89D00B80B9D /* Button+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		37E7CB482528E3DA00117BEF /* Controller */ = {
@@ -372,6 +386,7 @@
 		3B7FB3C82528A19C008294A7 /* SleepHelper */ = {
 			isa = PBXGroup;
 			children = (
+				37D1E2172529C8B300B80B9D /* Extensions */,
 				3B7FB3F12528A8F9008294A7 /* SupportFiles */,
 				37E7CBBA2528E80800117BEF /* AboutUs */,
 				37E7CBA52528E70500117BEF /* Notifications */,
@@ -436,7 +451,6 @@
 			children = (
 				3B7FB3C92528A19C008294A7 /* AppDelegate.swift */,
 				3B7FB3CB2528A19C008294A7 /* SceneDelegate.swift */,
-				37E7CBBD2528EE1100117BEF /* UIColor+Ext.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -522,6 +536,7 @@
 				37E7CBA82528E78F00117BEF /* AboutUsViewController.swift in Sources */,
 				3B7FB3CE2528A19C008294A7 /* MainViewController.swift in Sources */,
 				37B82B412528B59000B912D3 /* OffsetViewController.swift in Sources */,
+				37D1E2112529C84D00B80B9D /* Color+Ext.swift in Sources */,
 				3B7FB3CA2528A19C008294A7 /* AppDelegate.swift in Sources */,
 				37E7CBBE2528EE1100117BEF /* UIColor+Ext.swift in Sources */,
 				3B7FB3CC2528A19C008294A7 /* SceneDelegate.swift in Sources */,
@@ -535,6 +550,7 @@
 				37E7CB642528E4E200117BEF /* SettingsBuilder.swift in Sources */,
 				37E7CB742528E53500117BEF /* OffsetRouter.swift in Sources */,
 				37E7CB712528E52700117BEF /* OffsetPresenter.swift in Sources */,
+				37D1E2152529C89D00B80B9D /* Button+Ext.swift in Sources */,
 				3B7FB3DF2528A2B6008294A7 /* MainPresenter.swift in Sources */,
 				37E7CB612528E4D800117BEF /* SettingsRouter.swift in Sources */,
 				37E7CB4C2528E41C00117BEF /* ProfilePresenter.swift in Sources */,
