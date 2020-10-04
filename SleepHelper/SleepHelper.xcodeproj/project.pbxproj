@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37B82B412528B59000B912D3 /* OffsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B402528B59000B912D3 /* OffsetViewController.swift */; };
-		37B82B4D2528B69100B912D3 /* OffsetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */; };
+		37B82B412528B59000B912D3 /* TimezoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B402528B59000B912D3 /* TimezoneViewController.swift */; };
+		37B82B4D2528B69100B912D3 /* TimezoneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B82B4C2528B69100B912D3 /* TimezoneBuilder.swift */; };
 		37D1E2112529C84D00B80B9D /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E2102529C84D00B80B9D /* Color+Ext.swift */; };
 		37D1E2152529C89D00B80B9D /* Button+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E2142529C89D00B80B9D /* Button+Ext.swift */; };
+		37D1E21B2529F93F00B80B9D /* RecomendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E21A2529F93F00B80B9D /* RecomendationView.swift */; };
+		37D1E226252A045B00B80B9D /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E225252A045B00B80B9D /* HelperClass.swift */; };
 		37E7CB432528CFFA00117BEF /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 37E7CB422528CFFA00117BEF /* Charts */; };
 		37E7CB462528E3D400117BEF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB452528E3D400117BEF /* ProfileViewController.swift */; };
 		37E7CB4C2528E41C00117BEF /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB4B2528E41C00117BEF /* ProfilePresenter.swift */; };
@@ -20,8 +22,8 @@
 		37E7CB5E2528E4CF00117BEF /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB5D2528E4CF00117BEF /* SettingsPresenter.swift */; };
 		37E7CB612528E4D800117BEF /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB602528E4D800117BEF /* SettingsRouter.swift */; };
 		37E7CB642528E4E200117BEF /* SettingsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB632528E4E200117BEF /* SettingsBuilder.swift */; };
-		37E7CB712528E52700117BEF /* OffsetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB702528E52700117BEF /* OffsetPresenter.swift */; };
-		37E7CB742528E53500117BEF /* OffsetRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB732528E53500117BEF /* OffsetRouter.swift */; };
+		37E7CB712528E52700117BEF /* TimezonePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB702528E52700117BEF /* TimezonePresenter.swift */; };
+		37E7CB742528E53500117BEF /* TimezoneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB732528E53500117BEF /* TimezoneRouter.swift */; };
 		37E7CB7B2528E5B600117BEF /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB7A2528E5B600117BEF /* RecommendationsViewController.swift */; };
 		37E7CB7E2528E5CC00117BEF /* RecommendationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB7D2528E5CC00117BEF /* RecommendationsPresenter.swift */; };
 		37E7CB812528E5DC00117BEF /* RecommendationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E7CB802528E5DC00117BEF /* RecommendationsRouter.swift */; };
@@ -47,10 +49,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37B82B402528B59000B912D3 /* OffsetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetViewController.swift; sourceTree = "<group>"; };
-		37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffsetBuilder.swift; sourceTree = "<group>"; };
+		37B82B402528B59000B912D3 /* TimezoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimezoneViewController.swift; sourceTree = "<group>"; };
+		37B82B4C2528B69100B912D3 /* TimezoneBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimezoneBuilder.swift; sourceTree = "<group>"; };
 		37D1E2102529C84D00B80B9D /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		37D1E2142529C89D00B80B9D /* Button+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Ext.swift"; sourceTree = "<group>"; };
+		37D1E21A2529F93F00B80B9D /* RecomendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendationView.swift; sourceTree = "<group>"; };
+		37D1E225252A045B00B80B9D /* HelperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperClass.swift; sourceTree = "<group>"; };
 		37E7CB452528E3D400117BEF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		37E7CB4B2528E41C00117BEF /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		37E7CB4E2528E42900117BEF /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
@@ -59,8 +63,8 @@
 		37E7CB5D2528E4CF00117BEF /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		37E7CB602528E4D800117BEF /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
 		37E7CB632528E4E200117BEF /* SettingsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBuilder.swift; sourceTree = "<group>"; };
-		37E7CB702528E52700117BEF /* OffsetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPresenter.swift; sourceTree = "<group>"; };
-		37E7CB732528E53500117BEF /* OffsetRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetRouter.swift; sourceTree = "<group>"; };
+		37E7CB702528E52700117BEF /* TimezonePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezonePresenter.swift; sourceTree = "<group>"; };
+		37E7CB732528E53500117BEF /* TimezoneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneRouter.swift; sourceTree = "<group>"; };
 		37E7CB7A2528E5B600117BEF /* RecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
 		37E7CB7D2528E5CC00117BEF /* RecommendationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsPresenter.swift; sourceTree = "<group>"; };
 		37E7CB802528E5DC00117BEF /* RecommendationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsRouter.swift; sourceTree = "<group>"; };
@@ -99,7 +103,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37B82B442528B5A200B912D3 /* Offset */ = {
+		37B82B442528B5A200B912D3 /* Timezone */ = {
 			isa = PBXGroup;
 			children = (
 				37B82B462528B5E300B912D3 /* Controller */,
@@ -107,13 +111,13 @@
 				37E7CB782528E54400117BEF /* Router */,
 				37B82B4B2528B65900B912D3 /* Builder */,
 			);
-			path = Offset;
+			path = Timezone;
 			sourceTree = "<group>";
 		};
 		37B82B462528B5E300B912D3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				37B82B402528B59000B912D3 /* OffsetViewController.swift */,
+				37B82B402528B59000B912D3 /* TimezoneViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,7 +125,7 @@
 		37B82B4B2528B65900B912D3 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				37B82B4C2528B69100B912D3 /* OffsetBuilder.swift */,
+				37B82B4C2528B69100B912D3 /* TimezoneBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -134,6 +138,14 @@
 				37D1E2142529C89D00B80B9D /* Button+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		37D1E21D2529F94800B80B9D /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				37D1E21A2529F93F00B80B9D /* RecomendationView.swift */,
+			);
+			path = SwiftUIViews;
 			sourceTree = "<group>";
 		};
 		37E7CB482528E3DA00117BEF /* Controller */ = {
@@ -225,7 +237,7 @@
 		37E7CB762528E53D00117BEF /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				37E7CB702528E52700117BEF /* OffsetPresenter.swift */,
+				37E7CB702528E52700117BEF /* TimezonePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -233,7 +245,7 @@
 		37E7CB782528E54400117BEF /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				37E7CB732528E53500117BEF /* OffsetRouter.swift */,
+				37E7CB732528E53500117BEF /* TimezoneRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -386,13 +398,14 @@
 		3B7FB3C82528A19C008294A7 /* SleepHelper */ = {
 			isa = PBXGroup;
 			children = (
+				37D1E21D2529F94800B80B9D /* SwiftUIViews */,
 				37D1E2172529C8B300B80B9D /* Extensions */,
 				3B7FB3F12528A8F9008294A7 /* SupportFiles */,
 				37E7CBBA2528E80800117BEF /* AboutUs */,
 				37E7CBA52528E70500117BEF /* Notifications */,
 				37E7CB8F2528E64B00117BEF /* Recommendations */,
 				37E7CB6E2528E50C00117BEF /* Settings */,
-				37B82B442528B5A200B912D3 /* Offset */,
+				37B82B442528B5A200B912D3 /* Timezone */,
 				37E7CB492528E3E900117BEF /* Profile */,
 				3B7FB3EC2528A8B0008294A7 /* Main */,
 				3B7FB3CF2528A19C008294A7 /* Main.storyboard */,
@@ -451,6 +464,7 @@
 			children = (
 				3B7FB3C92528A19C008294A7 /* AppDelegate.swift */,
 				3B7FB3CB2528A19C008294A7 /* SceneDelegate.swift */,
+				37D1E225252A045B00B80B9D /* HelperClass.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -532,24 +546,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E7CB842528E5ED00117BEF /* RecommendationsBuilder.swift in Sources */,
+				37D1E226252A045B00B80B9D /* HelperClass.swift in Sources */,
 				37E7CBB12528E7E800117BEF /* AboutUsBuilder.swift in Sources */,
 				37E7CBA82528E78F00117BEF /* AboutUsViewController.swift in Sources */,
 				3B7FB3CE2528A19C008294A7 /* MainViewController.swift in Sources */,
-				37B82B412528B59000B912D3 /* OffsetViewController.swift in Sources */,
+				37B82B412528B59000B912D3 /* TimezoneViewController.swift in Sources */,
 				37D1E2112529C84D00B80B9D /* Color+Ext.swift in Sources */,
 				3B7FB3CA2528A19C008294A7 /* AppDelegate.swift in Sources */,
 				37E7CBBE2528EE1100117BEF /* UIColor+Ext.swift in Sources */,
 				3B7FB3CC2528A19C008294A7 /* SceneDelegate.swift in Sources */,
 				37E7CB7B2528E5B600117BEF /* RecommendationsViewController.swift in Sources */,
-				37B82B4D2528B69100B912D3 /* OffsetBuilder.swift in Sources */,
+				37B82B4D2528B69100B912D3 /* TimezoneBuilder.swift in Sources */,
 				3B7FB3E62528A435008294A7 /* MainBulder.swift in Sources */,
 				37E7CB9B2528E6DC00117BEF /* NotificationsBuilder.swift in Sources */,
 				37E7CB462528E3D400117BEF /* ProfileViewController.swift in Sources */,
 				37E7CB522528E43B00117BEF /* ProfileBuilder.swift in Sources */,
 				37E7CB7E2528E5CC00117BEF /* RecommendationsPresenter.swift in Sources */,
 				37E7CB642528E4E200117BEF /* SettingsBuilder.swift in Sources */,
-				37E7CB742528E53500117BEF /* OffsetRouter.swift in Sources */,
-				37E7CB712528E52700117BEF /* OffsetPresenter.swift in Sources */,
+				37E7CB742528E53500117BEF /* TimezoneRouter.swift in Sources */,
+				37E7CB712528E52700117BEF /* TimezonePresenter.swift in Sources */,
 				37D1E2152529C89D00B80B9D /* Button+Ext.swift in Sources */,
 				3B7FB3DF2528A2B6008294A7 /* MainPresenter.swift in Sources */,
 				37E7CB612528E4D800117BEF /* SettingsRouter.swift in Sources */,
@@ -562,6 +577,7 @@
 				37E7CB4F2528E42900117BEF /* ProfileRouter.swift in Sources */,
 				37E7CB982528E6D200117BEF /* NotificationsRouter.swift in Sources */,
 				37E7CB812528E5DC00117BEF /* RecommendationsRouter.swift in Sources */,
+				37D1E21B2529F93F00B80B9D /* RecomendationView.swift in Sources */,
 				37E7CB5E2528E4CF00117BEF /* SettingsPresenter.swift in Sources */,
 				37E7CBAE2528E7A800117BEF /* AboutUsRouter.swift in Sources */,
 			);
