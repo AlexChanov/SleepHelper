@@ -1,19 +1,19 @@
 //
-//  OffsetViewController.swift
-//  
+//  RecommendationsViewController.swift
+//  SleepHelper
 //
 //  Created by Дмитрий И. on 03.10.2020.
 //
 
 import UIKit
 
-protocol OffsetViewProtocol: class {
+protocol RecommendationsViewProtocol: class {
 
 }
 
-final class OffsetViewController: UIViewController, OffsetViewProtocol{
+final class RecommendationsViewController: UIViewController, RecommendationsViewProtocol{
 	
-	var presenter: OffsetPresenterProtocol?
+	var presenter: RecommendationsPresenterProtocol?
 
 		override func viewDidLoad() {
 				super.viewDidLoad()
