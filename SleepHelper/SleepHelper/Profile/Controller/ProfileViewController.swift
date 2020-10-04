@@ -73,7 +73,7 @@ struct ProfileSwiftUIView: View {
 							Text("Duration")
 								.foregroundColor(.textColor)
 							Spacer()
-							Text(durationString(duration: duration))
+							Text(Helper.durationString(duration: duration))
 								.foregroundColor(.textColor)
 						}
 						Slider(value: $duration, in: 0...5, step: 0.25)
@@ -146,7 +146,7 @@ struct ProfileSwiftUIView: View {
 							Text("Duration")
 								.foregroundColor(.textColor)
 							Spacer()
-							Text(durationString(duration: duration))
+							Text(Helper.durationString(duration: duration))
 								.foregroundColor(.textColor)
 						}
 					}
@@ -159,17 +159,6 @@ struct ProfileSwiftUIView: View {
 		}
 		.padding(24)
 		.background(Color("BackgroundColor"))
-	}
-	
-	func durationString(duration: Double) -> String {
-		var a = ""
-		a = "\(Int(duration))"
-		let b = Int((duration-Double(Int(duration)))*60)
-		if b != 0 {
-			a += ":\(b)"
-		}
-		a += " hr"
-		return a
 	}
 }
 
