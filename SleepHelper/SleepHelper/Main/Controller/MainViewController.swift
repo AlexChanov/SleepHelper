@@ -20,11 +20,28 @@ final class MainViewController: UIViewController, MainViewProtocol{
     let addButton = UIButton(type: .system)
     let clockBackgroundImage = UIImageView()
     let clockNumberImage = UIImageView()
+    let profileButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+    let settingsButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
 
+    let wakeUpLabel = UILabel()
+    let bedTimeLabel = UILabel()
+
+    lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [wakeUpLabel, bedTimeLabel])
+        stackView.alignment = .fill
+        stackView.distribution = .fill
+        stackView.spacing = 50
+        stackView.axis = .horizontal
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
 
     // MARK: - Properties
 
 	var presenter: MainPresenterProtocol?
+    let clockHelper = ClockHelper()
+    let startSleepHour: Float = 24.00
+    var wakeUpTime: CGFloat = 7.00
 
     // MARK: - Lifecycle
 
@@ -39,24 +56,70 @@ final class MainViewController: UIViewController, MainViewProtocol{
         clockBackgroundImageLayout()
 	}
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
     // MARK: - Private functions
 
     private func setupApperance() {
         view.backgroundColor = #colorLiteral(red: 0.8901960784, green: 0.9294117647, blue: 0.968627451, alpha: 1)
+
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.view.backgroundColor = UIColor.clear
+
+        wakeUpLabel.text = "Wake up \n \(wakeUpTime)"
+        wakeUpLabel.numberOfLines = 0
+        wakeUpLabel.textAlignment = .center
+
+        bedTimeLabel.text = "BedTime \n \(startSleepHour)"
+        bedTimeLabel.numberOfLines = 0
+        bedTimeLabel.textAlignment = .center
+
         clockBackgroundImage.image = #imageLiteral(resourceName: "Progress bar circle")
-        chartView.backgroundColor = .clear
 
         clockNumberImage.image = #imageLiteral(resourceName: "clockNumberIcon")
         clockNumberImage.tintColor = .black
 
-        setDataCount(Int(2), range: UInt32(100))
+        addButton.setImage(#imageLiteral(resourceName: "addButtomIcon"), for: .normal)
+
+        setDataCount(Int(3), range: UInt32(24))
+
+        profileButton.setBackgroundImage(#imageLiteral(resourceName: "arrow-left-line"), for: .normal)
+        profileButton.addTarget(self, action: #selector(showProfile), for: .touchUpInside)
+
+        settingsButton.setBackgroundImage(#imageLiteral(resourceName: "heart-fill"), for: .normal)
+        settingsButton.addTarget(self, action: #selector(showSettings), for: .touchUpInside)
 
         view.addSubview(clockBackgroundImage)
         view.addSubview(chartView)
         view.addSubview(clockNumberImage)
+        view.addSubview(addButton)
+        view.addSubview(profileButton)
+        view.addSubview(settingsButton)
+        view.addSubview(stackView)
+    }
+
+    @objc
+    private func showProfile() {
+
+    }
+
+    @objc
+    private func showSettings() {
+
     }
 
     private func clockBackgroundImageLayout() {
+        stackView.center = CGPoint(x: view.center.x, y: profileButton.frame.maxY + 62)
+        stackView.frame.size = CGSize(width: view.bounds.width - 20, height: 50)
+
+        profileButton.frame = CGRect(x: 40, y: 30 + view.safeAreaInsets.top, width: 30, height: 30)
+        settingsButton.frame = CGRect(x: Int(view.bounds.maxX - 40 - profileButton.bounds.width), y: 30 + Int(view.safeAreaInsets.top), width: 30, height: 30)
+
         clockBackgroundImage.frame.size = CGSize(width: 300, height: 300)
         clockBackgroundImage.center = view.center
 
@@ -65,20 +128,26 @@ final class MainViewController: UIViewController, MainViewProtocol{
 
         chartView.frame.size = CGSize(width: 340, height: 650)
         chartView.center = CGPoint(x: view.center.x, y: view.center.y + 15)
+
+        addButton.frame.size = CGSize(width: 100, height: 100)
+        addButton.center = CGPoint(x: view.center.x, y: view.bounds.maxY - addButton.bounds.height)
     }
 
     func setupPieChartView() {
+        chartView.backgroundColor = .clear
         chartView.usePercentValuesEnabled = true
         chartView.drawSlicesUnderHoleEnabled = false
-        chartView.holeRadiusPercent = 0.80
+        chartView.holeRadiusPercent = 0.70
         chartView.transparentCircleRadiusPercent = 0.61
         chartView.chartDescription?.enabled = false
         chartView.setExtraOffsets(left: 5, top: 10, right: 5, bottom: 5)
-        chartView.holeColor = .clear //#colorLiteral(red: 0.8901960784, green: 0.9294117647, blue: 0.968627451, alpha: 1)
-//        chartView.ho
-
+        chartView.holeColor = .clear
         chartView.drawCenterTextEnabled = false
-
+        chartView.drawHoleEnabled = true
+        chartView.drawEntryLabelsEnabled = false
+        chartView.rotationAngle = CGFloat(clockHelper.getAngelFromHour(startSleepHour))
+        chartView.rotationEnabled = true
+        chartView.highlightPerTapEnabled = true
 
         let paragraphStyle = NSParagraphStyle.default.mutableCopy() as! NSMutableParagraphStyle
         paragraphStyle.lineBreakMode = .byTruncatingTail
@@ -93,34 +162,8 @@ final class MainViewController: UIViewController, MainViewProtocol{
                                   .foregroundColor : UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1)], range: NSRange(location: centerText.length - 19, length: 19))
         chartView.centerAttributedText = centerText;
 
-        chartView.drawHoleEnabled = true
-        chartView.rotationAngle = 0
-        chartView.rotationEnabled = true
-        chartView.highlightPerTapEnabled = true
-
-//        let l = chartView.legend
-//        l.horizontalAlignment = .right
-//        l.verticalAlignment = .top
-//        l.orientation = .vertical
-//        l.drawInside = false
-//        l.xEntrySpace = 7
-//        l.yEntrySpace = 0
-//        l.yOffset = 0
-//        chartView.legend = l
-
-
         chartView.delegate = self
 
-//        let l = chartView.legend
-//        l.horizontalAlignment = .right
-//        l.verticalAlignment = .top
-//        l.orientation = .vertical
-//        l.xEntrySpace = 7
-//        l.yEntrySpace = 0
-//        l.yOffset = 0
-//        chartView.legend = l
-
-        // entry label styling
         chartView.entryLabelColor = .white
         chartView.entryLabelFont = .systemFont(ofSize: 12, weight: .light)
 
@@ -132,42 +175,21 @@ func setDataCount(_ count: Int, range: UInt32) {
     let entries = (0..<count).map { (i) -> PieChartDataEntry in
         // IMPORTANT: In a PieChart, no values (Entry) should have the same xIndex (even if from different DataSets), since no values can be drawn above each other.
         return PieChartDataEntry(value: Double(arc4random_uniform(range) + range / 5),
-                                 label: "",
+                                 label: nil,
                                  icon: nil)
     }
 
-    let set = PieChartDataSet(entries: entries, label: "Election Results")
+    let set = PieChartDataSet(entries: entries, label: "")
     set.drawIconsEnabled = false
     set.sliceSpace = 2
-//    set.label.
-
-
-    set.colors = [.clear, .green]
-        //ChartColorTemplates.vordiplom()
-//        + ChartColorTemplates.joyful()
-//        + ChartColorTemplates.colorful()
-//        + ChartColorTemplates.liberty()
-//        + ChartColorTemplates.pastel()
-//        + [UIColor(red: 51/255, green: 181/255, blue: 229/255, alpha: 1)]
+    set.colors = [.green, .clear, .red]
 
     let data = PieChartData(dataSet: set)
-
-    let pFormatter = NumberFormatter()
-    pFormatter.numberStyle = .percent
-    pFormatter.maximumFractionDigits = 1
-    pFormatter.multiplier = 1
-    pFormatter.percentSymbol = " %"
-//    data.setValueFormatter(DefaultValueFormatter(formatter: pFormatter))
-
-    data.setValueFont(.systemFont(ofSize: 11, weight: .light))
-    data.setValueTextColor(.white)
+    data.setValueTextColor(.clear)
 
     chartView.data = data
     chartView.highlightValues(nil)
 }
 }
 
-extension MainViewController: ChartViewDelegate {
-
-}
-
+extension MainViewController: ChartViewDelegate {}

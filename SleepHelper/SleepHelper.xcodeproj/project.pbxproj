@@ -19,6 +19,7 @@
 		3B7FB3DF2528A2B6008294A7 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3DE2528A2B6008294A7 /* MainPresenter.swift */; };
 		3B7FB3E62528A435008294A7 /* MainBulder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3E52528A435008294A7 /* MainBulder.swift */; };
 		3B7FB3E92528A85A008294A7 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3E82528A85A008294A7 /* MainRouter.swift */; };
+		3B7FB4002529F7FC008294A7 /* ClockHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7FB3FF2529F7FC008294A7 /* ClockHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		3B7FB3DE2528A2B6008294A7 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		3B7FB3E52528A435008294A7 /* MainBulder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBulder.swift; sourceTree = "<group>"; };
 		3B7FB3E82528A85A008294A7 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		3B7FB3FF2529F7FC008294A7 /* ClockHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		3B7FB3C82528A19C008294A7 /* SleepHelper */ = {
 			isa = PBXGroup;
 			children = (
+				3B7FB3FE2529F7DD008294A7 /* Service */,
 				37B82B442528B5A200B912D3 /* Offset */,
 				3B7FB3F12528A8F9008294A7 /* SupportFiles */,
 				3B7FB3EC2528A8B0008294A7 /* Main */,
@@ -154,6 +157,14 @@
 				3B7FB3CB2528A19C008294A7 /* SceneDelegate.swift */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		3B7FB3FE2529F7DD008294A7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3B7FB3FF2529F7FC008294A7 /* ClockHelper.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				3B7FB3CE2528A19C008294A7 /* MainViewController.swift in Sources */,
 				37B82B412528B59000B912D3 /* OffsetViewController.swift in Sources */,
 				3B7FB3CA2528A19C008294A7 /* AppDelegate.swift in Sources */,
+				3B7FB4002529F7FC008294A7 /* ClockHelper.swift in Sources */,
 				3B7FB3CC2528A19C008294A7 /* SceneDelegate.swift in Sources */,
 				37B82B4D2528B69100B912D3 /* OffsetBuilder.swift in Sources */,
 				3B7FB3E62528A435008294A7 /* MainBulder.swift in Sources */,
